@@ -12,25 +12,23 @@ header h1 {
   font-style: normal;
   font-weight: 700;
   font-size: 48px;
-  line-height: 1;
 }
 header h2 {
   font-style: normal;
   font-weight: 400;
   font-size: 32px;
-  line-height: 1;
 }
 header h3 {
   font-style: normal;
   font-weight: 900;
   font-size: 18px;
-  line-height: 1;
+
   letter-spacing: 5px;
 }
 header a {
   font-weight: 700;
   font-size: 12px;
-  line-height: 1;
+
   letter-spacing: 3px;
   text-transform: uppercase;
   padding: 16px 32px;
@@ -39,10 +37,46 @@ header a {
   text-decoration: none;
   color: black;
 }
+footer {
+  color: white;
+  background-image: linear-gradient(
+      rgba(39, 32, 68, 0.9),
+      rgba(39, 32, 68, 0.9)
+    ),
+    url("../images/architecture.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 30px;
+}
+footer h4 {
+  font-weight: 700;
+  font-size: 20px;
+}
+footer ul {
+  list-style-type: none;
+  padding: 0;
+}
+footer a {
+  color: white;
+  opacity: 0.7;
+}
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
   font-family: "Poppins";
+  line-height: 1;
+}
+
+.footer-grid {
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: 1fr 2fr 2fr;
+}
+.footer-content {
+  font-weight: 400;
+  font-size: 16px;
 }
 
 @media (max-width: 576px) {
