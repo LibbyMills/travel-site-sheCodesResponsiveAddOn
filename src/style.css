@@ -36,11 +36,12 @@ header a {
   text-decoration: none;
   color: black;
 }
-main section {
+section {
+  max-width: 100%;
   margin: 0 auto;
-  width: 90%;
-  padding: 100px 0;
+  padding: 100px;
 }
+
 main h2 {
   font-weight: 700;
   font-size: 40px;
@@ -74,9 +75,7 @@ footer {
   background-position: center;
   background-repeat: no-repeat;
 }
-footer section {
-  padding: 40px;
-}
+
 footer h4 {
   font-weight: 700;
   font-size: 20px;
@@ -92,17 +91,16 @@ footer a {
 section.cards-section {
   background: #f8f8f8;
   text-align: center;
-  width: 100%;
-  padding: 30px 0;
 }
 .container {
   margin: 0 auto;
   font-family: "Poppins";
   line-height: 1;
+  max-width: 1400px;
 }
 .grid {
   display: grid;
-  grid-gap: 40px;
+  grid-gap: 30px;
 }
 .content {
   font-weight: 400;
@@ -114,7 +112,6 @@ section.cards-section {
 }
 .grid-3-columns {
   grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 30px;
 }
 .main-image {
   width: 100%;
@@ -172,9 +169,6 @@ section.cards-section {
     font-size: 6px;
     padding: 5px 10px;
   }
-  main section {
-    padding: 50px 0;
-  }
   main h2 {
     font-size: 16px;
   }
@@ -197,7 +191,7 @@ section.cards-section {
   .embed {
     aspect-ratio: 16/9;
   }
-  .grid img {
+  .grid img.card-img {
     display: none;
   }
 }
