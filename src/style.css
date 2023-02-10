@@ -145,6 +145,9 @@ section.cards-section {
   background: #462cb3;
   text-align: center;
 }
+.gallery-section {
+  text-align: center;
+}
 .footer-grid {
   grid-template-columns: 1fr 2fr 2fr;
 }
